@@ -1,0 +1,33 @@
+body {
+  background-color: teal;
+  background-position: center center;
+}
+
+.js-question-form {
+  border: 1px solid black;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.form-question {
+  max-width: 600px;
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 0 0 20px 20px;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.answer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.check {
+  display: block;
+  margin: 10px auto 10px;
+}
