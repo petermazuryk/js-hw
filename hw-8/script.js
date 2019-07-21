@@ -80,9 +80,9 @@ function checkResult(result) {
   const inPercentage = (corectAnswer / quizData.questions.length) * 100;
 
   if (inPercentage < 80) {
-    resultMessage = `Вы ответили не правильно на ${incorectAnswer} вопросов. (`;
+    resultMessage = `Вы ответили не правильно на ${incorectAnswer} вопросов.`;
   } else {
-    resultMessage = `Вы ответили правильно на ${corectAnswer} вопросов. Поздравляем! Тест пройден!'`;
+    resultMessage = `Вы ответили правильно на ${corectAnswer} вопросов.`;
   }
 
   alert(resultMessage);
