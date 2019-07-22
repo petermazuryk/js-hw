@@ -37,8 +37,8 @@ function createForm({ title, questions }) {
       const formLabel = document.createElement('label');
       const formInput = document.createElement('input');
       formInput.setAttribute('type', 'radio');
-      formInput.setAttribute('value', choiceIdx);
-      formInput.setAttribute('name', `question${questionIdx}`);
+      formInput.setAttribute('value', `${choiceIdx + 1}`);
+      formInput.setAttribute('name', `question${questionIdx + 1}`);
 
       answersList.append(formSelectAnswers);
       formSelectAnswers.append(formLabel);
@@ -59,12 +59,12 @@ function handleSubmit(e) {
   e.preventDefault();
 
   const formData = new FormData(e.currentTarget);
-  formData.forEach((name, value) => {
+  formData.forEach((value, name) => {
     data[name] = value;
   });
   checkResult(data);
 }
-// console.log(result);
+
 function checkResult(result) {
   const userAnswer = Object.values(result);
   corectAnswer = 0;
